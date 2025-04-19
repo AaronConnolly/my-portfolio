@@ -3,29 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./public/style.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AaronConnolly/my-portfolio.git"
-  },
-  "author": "Aaron Connolly",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AaronConnolly/my-portfolio/issues"
-  },
-  "homepage": "https://github.com/AaronConnolly/my-portfolio#readme",
-  "description": "",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "vite": "^6.3.1",
+    "tailwindcss": "^4.1.4",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.4"
+    "autoprefixer": "^10.4.21"
   }
 }
