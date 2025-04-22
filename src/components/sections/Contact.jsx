@@ -6,20 +6,22 @@ export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
-
-  const SERVICE_ID = "service_ulep0r9";
-  const TEMPLATE_ID = "template_rz2qplk";
-  const PUBLIC_KEY = "-kWQWIJW1u5vXDOlA";
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        e.target,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
       .then((result) => {
         alert("Message Sent");
+        setFormData({ name: "", email: "", message: "" });
       })
       .catch(() => alert("Oops! Something went wrong. Please try again!"));
   };
@@ -37,17 +39,21 @@ export const Contact = () => {
           >
             Get In Touch
           </h2>
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="relative">
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
+                aria-label="Name"
                 value={formData.name}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition 
                           focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Name..."
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
               />
             </div>
             <div className="relative">
@@ -56,10 +62,14 @@ export const Contact = () => {
                 id="email"
                 name="email"
                 required
+                aria-label="Email"
                 value={formData.email}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition 
                           focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="example@gmail.com"
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
               />
             </div>
             <div className="relative">
@@ -68,10 +78,14 @@ export const Contact = () => {
                 name="message"
                 rows={5}
                 required
+                aria-label="Message"
                 value={formData.message}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition 
                           focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Your Message..."
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
               />
             </div>
 
