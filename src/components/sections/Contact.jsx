@@ -1,5 +1,29 @@
+import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
+import emailjs from "emailjs-com";
+
 export const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const SERVICE_ID = "service_ulep0r9";
+  const TEMPLATE_ID = "template_rz2qplk";
+  const PUBLIC_KEY = "-kWQWIJW1u5vXDOlA";
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+      .then((result) => {
+        alert("Message Sent");
+      })
+      .catch(() => alert("Oops! Something went wrong. Please try again!"));
+  };
+
   return (
     <section
       id="contact"
@@ -20,6 +44,7 @@ export const Contact = () => {
                 id="name"
                 name="name"
                 required
+                value={formData.name}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition 
                           focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Name..."
@@ -31,6 +56,7 @@ export const Contact = () => {
                 id="email"
                 name="email"
                 required
+                value={formData.email}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition 
                           focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="example@gmail.com"
@@ -42,6 +68,7 @@ export const Contact = () => {
                 name="message"
                 rows={5}
                 required
+                value={formData.message}
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition 
                           focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Your Message..."
