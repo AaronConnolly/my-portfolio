@@ -3,8 +3,7 @@
 This is my **personal portfolio website** built with [Tailwind CSS v4](https://tailwindcss.com/), showcasing my background, projects, and contact information in a sleek, responsive design.
 
 ## 🌐 Live Site
-[Visit my portfolio →](https://yourwebsiteurl.com)  
-*(Replace with your actual deployed link if available)*
+[Visit my portfolio →](https://AaronConnolly.github.io/my-portfolio)  
 
 ---
 
