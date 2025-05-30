@@ -27,10 +27,10 @@ This is my **personal portfolio website** built with React & TailwindCSS, showca
 
 - **Frontend:**  
   - [Tailwind CSS v4](https://tailwindcss.com/)
-  - HTML, JSX/React *(if applicable)*
+  - HTML, JSX/React 
 
 - **Deployment:**  
-  - [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/) / GitHub Pages *(adjust based on what you used)*
+  GitHub Pages 
 
 ---
 
