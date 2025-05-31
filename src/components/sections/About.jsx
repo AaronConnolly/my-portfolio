@@ -4,7 +4,7 @@ import TuDublinLogo from "../../../public/TuDublin_Logo.png";
 
 export const About = () => {
   const frontendSkills = ["React", "TailwindCSS"];
-  const backendSkills = ["C", "Python", "Java"];
+  const backendSkills = ["Python", "C", "Java", "Sql", "Cloud Computing"];
   return (
     <section
       id="about"
@@ -18,8 +18,29 @@ export const About = () => {
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              Passionate developer with a strong problem solving ability and a
-              drive to continue to learn and better myself
+              I'm an aspiring software engineer currently in my third year of
+              college, entering my fourth year this September. I have a genuine
+              interest in artificial intelligence and its potential to create
+              meaningful solutions.
+            </p>
+            <p className="text-gray-300 mb-6">My strengths:</p>
+            <ul className="list-disc list-inside text-gray-300 space-y-2 pl-4">
+              <li>Collaborating with teams to tackle challenging problems.</li>
+              <li>
+                Exploring and implementing AI frameworks to solve real-world
+                issues.
+              </li>
+              <li>
+                Continuously expanding my knowledge in software engineering and
+                artificial intelligence.
+              </li>
+            </ul>
+            <p className="text-gray-300 mb-6">
+              I thrive in team environments where I can contribute my skills and
+              learn from others' perspectives. Whether it's working on
+              collaborative projects or independently exploring new
+              technologies, I'm always eager to grow as both a developer and a
+              team member.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
