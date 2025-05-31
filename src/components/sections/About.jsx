@@ -10,7 +10,7 @@ export const About = () => {
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             About Me
           </h2>
 
@@ -53,34 +53,67 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4"> 📚 Education</h3>
               <ul className="list-desc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong>3rd year in Computer Science</strong> - Technological
-                  University of Dublin (2022-2026)
+                  <strong>Technological University of Dublin (TuDublin) </strong> -{" "}
+                  Dublin, Ireland
+                </li>
+                <li>Bachelor of Computer Science - Expected May 2026</li>
+                <li>
+                  <strong>Relevant Coursework</strong> - Software Engineering,
+                  Introduction to AI, Algorithms & Data Structures, Databases,
+                  Programming/
+                  OOP, Cloud Computing, Client Server Programming
                 </li>
                 <li>
-                  Relevant CourseWork: Data Structures and Algorithms, Intro to
-                  AI, Cloud Computing
+                  Grade - First Class Honours (1:1), in year 3. (Equivalent 4.0
+                  GPA)
                 </li>
               </ul>
             </div>
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4"> 💼 Work Experience</h3>
               <div className="space-y-4 text-gray-300">
-                <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    Software Engineer Intern at WorkHuman (Feb 2025 - Aug 2025)
-                  </h4>
-                  <p>
-                    I worked on the AI assistant team which created a Generative
-                    AI chatbot using AI Agents, RAG retrieval, AWS cloud data
-                    storage (Redis, Redshift), bla bla
-                  </p>
-                </div>
+                <ul className="list-desc list-inside text-gray-300 space-y-4">
+                  <li>
+                    <strong>Workhuman</strong> - (#1 Employee Recognition Software)
+                  </li>
+                  <li>
+                    <strong>Role:</strong> Software Engineer Intern (AI-Assistant
+                    Team)
+                  </li>
+                  <li>
+                    <strong>Key Contributions:</strong>
+                    <ul className="list-disc list-inside pl-4 space-y-2">
+                      <li>
+                        Enhanced AI response accuracy and user experience by
+                        modifying positional embeddings for semantic routing and
+                        prompt engineering for LLM routing within an agentic AI
+                        architecture.
+                      </li>
+                      <li>
+                        Improved system reliability and stability by conducting root
+                        cause analysis on RAG generative-AI components, creating
+                        detailed technical stories, and implementing fixes to
+                        resolve critical system failures.
+                      </li>
+                      <li>
+                        Optimized AWS ECS cluster performance through JMeter load
+                        testing and fine-tuning configurations based on performance
+                        data analysis.
+                      </li>
+                      <li>
+                        Boosted team collaboration and project velocity by actively
+                        participating in daily scrum meetings, briefly acting as
+                        Scrum Master, and contributing to agile development
+                        processes during the critical pre-launch period.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
