@@ -1,4 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import WorkHumanLogo from "../../../public/WorkHuman_Logo.png";
+import TuDublinLogo from "../../../public/TuDublin_Logo2.png";
 
 export const About = () => {
   const frontendSkills = ["React", "TailwindCSS"];
@@ -55,18 +57,26 @@ export const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 📚 Education</h3>
+              <div className="flex items-center mb-4">
+                <img
+                  src={TuDublinLogo} // Replace with the actual path to your PNG image
+                  alt="Education Icon"
+                  className="w-14 h-10 rounded-full mr-3"
+                />
+                <h3 className="text-xl font-bold"> 📚 Education</h3>
+              </div>
               <ul className="list-desc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong>Technological University of Dublin (TuDublin) </strong> -{" "}
-                  Dublin, Ireland
+                  <strong>
+                    Technological University of Dublin (TuDublin){" "}
+                  </strong>{" "}
+                  - Dublin, Ireland
                 </li>
                 <li>Bachelor of Computer Science - Expected May 2026</li>
                 <li>
                   <strong>Relevant Coursework</strong> - Software Engineering,
                   Introduction to AI, Algorithms & Data Structures, Databases,
-                  Programming/
-                  OOP, Cloud Computing, Client Server Programming
+                  Programming/ OOP, Cloud Computing, Client Server Programming
                 </li>
                 <li>
                   Grade - First Class Honours (1:1), in year 3. (Equivalent 4.0
@@ -75,15 +85,23 @@ export const About = () => {
               </ul>
             </div>
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 💼 Work Experience</h3>
+              <div className="flex items-center mb-4">
+                <img
+                  src={WorkHumanLogo} // Replace with the actual path to your PNG image
+                  alt="Work Icon"
+                  className="w-10 h-10 rounded-full mr-3"
+                />
+                <h3 className="text-xl font-bold"> 💼 Work Experience</h3>
+              </div>
               <div className="space-y-4 text-gray-300">
                 <ul className="list-desc list-inside text-gray-300 space-y-4">
                   <li>
-                    <strong>Workhuman</strong> - (#1 Employee Recognition Software)
+                    <strong>Workhuman</strong> - (#1 Employee Recognition
+                    Software)
                   </li>
                   <li>
-                    <strong>Role:</strong> Software Engineer Intern (AI-Assistant
-                    Team)
+                    <strong>Role:</strong> Software Engineer Intern
+                    (AI-Assistant Team)
                   </li>
                   <li>
                     <strong>Key Contributions:</strong>
@@ -95,21 +113,22 @@ export const About = () => {
                         architecture.
                       </li>
                       <li>
-                        Improved system reliability and stability by conducting root
-                        cause analysis on RAG generative-AI components, creating
-                        detailed technical stories, and implementing fixes to
-                        resolve critical system failures.
+                        Improved system reliability and stability by conducting
+                        root cause analysis on RAG generative-AI components,
+                        creating detailed technical stories, and implementing
+                        fixes to resolve critical system failures.
                       </li>
                       <li>
-                        Optimized AWS ECS cluster performance through JMeter load
-                        testing and fine-tuning configurations based on performance
-                        data analysis.
+                        Optimized AWS ECS cluster performance through JMeter
+                        load testing and fine-tuning configurations based on
+                        performance data analysis.
                       </li>
                       <li>
-                        Boosted team collaboration and project velocity by actively
-                        participating in daily scrum meetings, briefly acting as
-                        Scrum Master, and contributing to agile development
-                        processes during the critical pre-launch period.
+                        Boosted team collaboration and project velocity by
+                        actively participating in daily scrum meetings, briefly
+                        acting as Scrum Master, and contributing to agile
+                        development processes during the critical pre-launch
+                        period.
                       </li>
                     </ul>
                   </li>
