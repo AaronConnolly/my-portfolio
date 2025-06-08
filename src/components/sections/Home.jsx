@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import Profile from "../../assets/projects/Profile_Pic.png";
 
 export const Home = () => {
   return (
@@ -8,6 +9,12 @@ export const Home = () => {
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
+          {/* Circular headshot */}
+          <img
+            src={Profile} // Replace with the actual path to your headshot image
+            alt="Aaron Connolly"
+            className="w-97 h-77 rounded-full mx-auto mb-6 border-5 border-white"
+          />
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
             Hi, I'm Aaron Connolly
           </h1>
