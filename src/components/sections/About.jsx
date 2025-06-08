@@ -1,6 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import WorkHumanLogo from "../../../public/WorkHuman_Logo.png";
-import TuDublinLogo from "../../../public/TuDublin_Logo.png";
+import WorkHumanLogo from "../../assets/WorkHuman_Logo.png";
+import TuDublinLogo from "../../assets/TuDublin_Logo.png";
 
 export const About = () => {
   const frontendSkills = ["React", "TailwindCSS"];
