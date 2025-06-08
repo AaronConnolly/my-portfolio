@@ -2,6 +2,9 @@ import { RevealOnScroll } from "../RevealOnScroll";
 import TransformerLogo from "../../assets/projects/transformer2.jpeg";
 import FitnessTrackerLogo from "../../assets/projects/Fitness_Tracker2.png";
 import MusicVisualLogo from "../../assets/projects/Music_Visual.png";
+import GeminiLogo from "../../assets/projects/gemini2.jpeg";
+import LibraryLogo from "../../assets/projects/Library.png";
+import MLLogo from "../../assets/projects/ML.png";
 
 const projects = [
 	{
@@ -15,12 +18,12 @@ const projects = [
 	},
 	{
 		id: 2,
-		title: "Music Visual Project",
+		title: "Ai Interview Coach",
 		description:
-			"Visualisaton of Bohemian Rhapsody using frequency and amplitude",
-		image: MusicVisualLogo,
-		tags: ["Java", "Group Project"],
-		GitHubUrl: "https://github.com/AaronConnolly/MusicVisuals",
+			"Interactive Interview Simulation. Users can specify the job role and the number of questions they want to practice. The application then dynamically generates interview questions and provides feedback on each answer.",
+		image: GeminiLogo,
+		tags: ["Gemini API", "Python", "JavaScript", "HTML", "CSS"],
+		GitHubUrl: "https://github.com/AaronConnolly/AI_Interview_Coach",
 	},
 	{
 		id: 3,
@@ -30,6 +33,33 @@ const projects = [
 		image: FitnessTrackerLogo,
 		tags: ["Kotlin", "GPS", "Spedometer"],
 		GitHubUrl: "https://github.com/AaronConnolly/Fitness_Tracker_App",
+	},
+	{
+		id: 4,
+		title: "Music Visual Project",
+		description:
+			"Visualisaton of Bohemian Rhapsody using frequency and amplitude",
+		image: MusicVisualLogo,
+		tags: ["Java", "Group Project"],
+		GitHubUrl: "https://github.com/AaronConnolly/MusicVisuals",
+	},
+	{
+		id: 5,
+		title: "Library book reservation website",
+		description:
+			"Library Website with a reliable booking system, book search and MySwl data storage",
+		image: LibraryLogo,
+		tags: ["HTML", "CSS", "JavaScript", "Sql", "RDMS"],
+		GitHubUrl: "https://github.com/AaronConnolly/Library_Website",
+	},
+	{
+		id: 6,
+		title: "Predictive Analysis with Machine Learning",
+		description:
+			"This project implements a multilayer perceptron (MLP) from scratch using NumPy. It demonstrates the MLP's ability to learn the XOR problem and perform Iris flower classification. The project also explores the effects of varying hyperparameters like the number of hidden neurons and the learning rate.",
+		image: MLLogo,
+		tags: ["Python", "Machine Learning", "Numpy", "Pandas"],
+		GitHubUrl: "https://github.com/AaronConnolly/Machine_Learning_Intro",
 	},
 ];
 
