@@ -20,10 +20,10 @@ const projects = [
 		id: 2,
 		title: "Ai Interview Coach",
 		description:
-			"Interactive Interview Simulation. Users can specify the job role and the number of questions they want to practice. The application then dynamically generates interview questions and provides feedback on each answer.",
+			"Interactive Interview Simulation. Users can specify the job role and the number of questions they want to practice. The application then dynamically generates interview questions and provides detailed feedback",
 		image: GeminiLogo,
-		tags: ["Gemini API", "Python", "JavaScript", "HTML", "CSS"],
-		GitHubUrl: "https://github.com/AaronConnolly/AI_Interview_Coach",
+		tags: ["Gemini API", "Python", "Ract", "Vite", "CSS"],
+		GitHubUrl: "https://github.com/AaronConnolly/Full_Stack_AI_Interview_Coach",
 	},
 	{
 		id: 3,
